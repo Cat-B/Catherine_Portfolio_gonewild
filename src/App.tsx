@@ -1136,7 +1136,7 @@ function Portfolio() {
               <a href="https://www.linkedin.com/in/catherine-boss-030207289/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin size={24} />
               </a>
-              <a href="https://github.com/catherineboss" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="https://github.com/cat-b" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Github size={24} />
               </a>
             </div>
