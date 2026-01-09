@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown, ArrowLeft, ChevronLeft, ChevronRight, GraduationCap, MapPin, FileText, Briefcase, Calendar, Building } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown, ArrowLeft, ChevronLeft, ChevronRight, GraduationCap, MapPin, FileText, Briefcase, Calendar, Building, Sparkles } from 'lucide-react';
 
 // Professional Experience Data
 const experienceData = [
@@ -666,6 +666,7 @@ function ProjectDetail() {
 function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [whimsyMode, setWhimsyMode] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -730,7 +731,7 @@ function Portfolio() {
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
-          
+
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(section);
             break;
@@ -742,6 +743,18 @@ function Portfolio() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (whimsyMode) {
+      document.body.classList.add('whimsy-mode');
+    } else {
+      document.body.classList.remove('whimsy-mode');
+    }
+  }, [whimsyMode]);
+
+  const toggleWhimsyMode = () => {
+    setWhimsyMode(!whimsyMode);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -801,13 +814,16 @@ function Portfolio() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 mb-12">
           {/* Profile Image */}
-          <div className="flex-shrink-0">
-            <img 
-              src="https://i.imgur.com/FgJr1hj.jpeg" 
-              alt="Catherine Boss"
-              className="w-80 h-80 object-cover rounded-2xl shadow-lg"
-            />
-          </div>
+<div className="flex-shrink-0">
+  <div className="image-frame">
+    <img 
+      src="https://i.imgur.com/FgJr1hj.jpeg" 
+      alt="Catherine Boss"
+      className="w-80 h-80 object-cover rounded-2xl shadow-lg"
+    />
+  </div>
+</div>
+
           
           {/* Profile Info */}
           <div className="flex-1 text-center lg:text-left">
@@ -850,7 +866,7 @@ function Portfolio() {
             <FileText className="w-5 h-5 mr-2" />
             Most Recent Resume
           </a>
-          
+
           <a
             href="https://www.linkedin.com/in/catherine-boss-030207289/"
             target="_blank"
@@ -859,7 +875,7 @@ function Portfolio() {
             <ExternalLink className="w-5 h-5 mr-2" />
             LinkedIn
           </a>
-          
+
           <a
             href="mailto:CatherineBoss27@gmail.com"
             className="inline-flex items-center justify-center px-6 py-3 border-2 border-blue-200 text-slate-700 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-all duration-200"
@@ -867,6 +883,18 @@ function Portfolio() {
             <Mail className="w-5 h-5 mr-2" />
             Get in Contact
           </a>
+
+          <button
+            onClick={toggleWhimsyMode}
+            className={`inline-flex items-center justify-center px-6 py-3 border-2 rounded-lg transition-all duration-200 ${
+              whimsyMode
+                ? 'bg-teal-600 border-teal-600 text-white hover:bg-teal-700 hover:border-teal-700'
+                : 'border-blue-200 text-slate-700 hover:bg-blue-50 hover:border-blue-300'
+            }`}
+          >
+            <Sparkles className="w-5 h-5 mr-2" />
+            {whimsyMode ? 'Exit Whimsy' : 'Whimsy Mode'}
+          </button>
         </div>
       </div>
       </section>
