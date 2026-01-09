@@ -1,3 +1,385 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  transition: background-color 0.5s ease;
+}
+body.whimsy-mode {
+  background-color: #2e5328;
+  background-image: url('https://i.imgur.com/BPlSEAr.jpeg');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  color: #003019;
+}
+
+body.whimsy-mode p,
+body.whimsy-mode li,
+body.whimsy-mode span {
+  color: #003019 !important;
+}
+
+body.whimsy-mode section {
+  background-color: transparent !important;
+}
+
+body.whimsy-mode section > div {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: none;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+}
+
+
+
+body.whimsy-mode section {
+  background-color: transparent !important;
+}
+
+body.whimsy-mode section > div {
+  background-color: rgba(42, 92, 71, 0.35); /* green-tinted glass */
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 48, 25, 0.25);
+  margin: 1rem auto;
+}
+
+
+body.whimsy-mode nav {
+  background-color: rgba(42, 92, 71, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #5c8255 !important;
+}
+
+body.whimsy-mode nav .font-bold {
+  color: #ffffff !important;
+}
+
+body.whimsy-mode nav button,
+body.whimsy-mode nav a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.whimsy-mode nav button:hover,
+body.whimsy-mode nav a:hover {
+  color: #e67515 !important;
+}
+
+body.whimsy-mode nav button.text-blue-600,
+body.whimsy-mode nav button.text-blue-600.font-medium {
+  color: #e67515 !important;
+  font-weight: 600;
+}
+
+body.whimsy-mode .bg-blue-600,
+body.whimsy-mode .hover\:bg-blue-700:hover {
+  background-color: #2a5c47 !important;
+}
+
+body.whimsy-mode .hover\:bg-blue-700:hover {
+  background-color: #003019 !important;
+}
+
+body.whimsy-mode .text-blue-600 {
+  color: #2a5c47 !important;
+}
+
+body.whimsy-mode .bg-blue-100 {
+  background-color: rgba(92, 130, 85, 0.2) !important;
+}
+
+body.whimsy-mode .text-blue-800 {
+  color: #003019 !important;
+}
+
+body.whimsy-mode .border-blue-200 {
+  border-color: #5c8255 !important;
+}
+
+body.whimsy-mode .hover\:bg-blue-50:hover {
+  background-color: rgba(92, 130, 85, 0.15) !important;
+}
+
+body.whimsy-mode .hover\:border-blue-300:hover {
+  border-color: #2a5c47 !important;
+}
+
+body.whimsy-mode .bg-gray-50 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.whimsy-mode .bg-gray-900 {
+  background-color: #003019 !important;
+}
+
+body.whimsy-mode img {
+  position: relative;
+}
+body.whimsy-mode #projects img {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+  body.whimsy-mode #projects .shadow-lg,
+body.whimsy-mode #projects .shadow-xl {
+  background-color: #ffffff !important;
+}
+  
+body.whimsy-mode img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://i.imgur.com/DVagTFG.png');
+  background-size: 100px 100px;
+  background-repeat: repeat;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: inherit;
+}
+
+body.whimsy-mode #home img,
+body.whimsy-mode #about img,
+body.whimsy-mode #projects img {
+  box-shadow: 0 8px 24px rgba(0, 48, 25, 0.3), inset 0 0 0 3px rgba(230, 117, 21, 0.3);
+  border: 3px solid rgba(92, 130, 85, 0.5);
+  transition: all 0.3s ease;
+}
+body.whimsy-mode #projects .shadow-lg img,
+body.whimsy-mode #projects .shadow-xl img {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 12px 12px 0 0 !important;
+}
+
+body.whimsy-mode .bg-green-50 {
+  background-color: rgba(92, 130, 85, 0.2) !important;
+}
+
+body.whimsy-mode .text-green-800,
+body.whimsy-mode .text-green-600 {
+  color: #003019 !important;
+}
+
+body.whimsy-mode footer {
+  background-color: #003019 !important;
+}
+
+body.whimsy-mode .shadow-lg,
+body.whimsy-mode .shadow-xl {
+  box-shadow: 0 10px 25px rgba(0, 48, 25, 0.3) !important;
+}
+
+body.whimsy-mode .hover\:shadow-xl:hover {
+  box-shadow: 0 15px 35px rgba(0, 48, 25, 0.4) !important;
+}
+
+body.whimsy-mode h1,
+body.whimsy-mode h2,
+body.whimsy-mode h3 {
+  color: #003019 !important;
+}
+
+body.whimsy-mode .bg-white,
+body.whimsy-mode .bg-gray-50,
+body.whimsy-mode .bg-blue-100 {
+  background-color: rgba(42, 92, 71, 0.3) !important;
+}
+
+body.whimsy-mode .border-gray-100 {
+  border-color: rgba(92, 130, 85, 0.3) !important;
+}
+
+
+@keyframes lily-pad-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+body.whimsy-mode footer,
+body.whimsy-mode footer * {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+body.whimsy-mode #home img:first-of-type {
+  animation: lily-pad-float 4s ease-in-out infinite;
+}
+body.whimsy-mode #projects button,
+body.whimsy-mode #projects a.inline-flex {
+  background-color: #2a5c47 !important; /* darker green */
+  color: #ffffff !important;
+}
+
+body.whimsy-mode #projects button svg,
+body.whimsy-mode #projects a svg {
+  color: #e67515 !important; /* koi accent for arrow */
+  fill: #e67515 !important;
+}
+<div class="image-frame">
+  <img src="https://i.imgur.com/DVagTFG.png" alt="Headshot" />
+</div>
+body.whimsy-mode #home .image-frame::after {
+  background-size: 200px 200px;
+}
+
+/* -------------------------------
+   Base
+-------------------------------- */
+body {
+  transition: background-color 0.5s ease;
+}
+
+/* -------------------------------
+   Whimsy Mode Background
+-------------------------------- */
+body.whimsy-mode {
+  background-color: #2e5328;
+  background-image: url('https://i.imgur.com/BPlSEAr.jpeg');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  color: #003019;
+}
+
+/* -------------------------------
+   Text Readability
+-------------------------------- */
+body.whimsy-mode p,
+body.whimsy-mode li,
+body.whimsy-mode span,
+body.whimsy-mode h1,
+body.whimsy-mode h2,
+body.whimsy-mode h3 {
+  color: #003019 !important;
+}
+
+/* -------------------------------
+   Section Containers
+-------------------------------- */
+body.whimsy-mode section {
+  background-color: transparent !important;
+}
+
+body.whimsy-mode section > div {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+}
+
+/* -------------------------------
+   Navigation
+-------------------------------- */
+body.whimsy-mode nav {
+  background-color: rgba(42, 92, 71, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #5c8255 !important;
+}
+
+body.whimsy-mode nav * {
+  color: #ffffff !important;
+}
+
+body.whimsy-mode nav a:hover,
+body.whimsy-mode nav button:hover {
+  color: #e67515 !important;
+}
+
+/* -------------------------------
+   PROJECT CARDS (IMPORTANT)
+   Make images behave like normal mode
+-------------------------------- */
+body.whimsy-mode #projects .shadow-lg,
+body.whimsy-mode #projects .shadow-xl {
+  background-color: #ffffff !important;
+  overflow: hidden;
+}
+
+/* Remove ALL image interaction */
+body.whimsy-mode img {
+  transform: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: none !important;
+}
+
+/* Explicitly kill hover effects */
+body.whimsy-mode img:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Project images inherit card shape */
+body.whimsy-mode #projects img {
+  border-radius: 12px 12px 0 0 !important;
+  display: block;
+}
+
+/* -------------------------------
+   Buttons (See More Projects)
+-------------------------------- */
+body.whimsy-mode #projects button,
+body.whimsy-mode #projects a.inline-flex {
+  background-color: #2a5c47 !important;
+  color: #ffffff !important;
+}
+
+body.whimsy-mode #projects button svg,
+body.whimsy-mode #projects a svg {
+  color: #e67515 !important;
+  fill: #e67515 !important;
+}
+
+/* -------------------------------
+   Headshot Decorative Overlay ONLY
+-------------------------------- */
+.image-frame {
+  position: relative;
+  display: inline-block;
+}
+
+body.whimsy-mode #home .image-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://i.imgur.com/DVagTFG.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 320px 320px;
+  pointer-events: none;
+}
+
+/* -------------------------------
+   Footer
+-------------------------------- */
+body.whimsy-mode footer,
+body.whimsy-mode footer * {
+  background-color: #003019 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* -------------------------------
+   Subtle Animation (Headshot only)
+-------------------------------- */
+@keyframes lily-pad-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+body.whimsy-mode #home .image-frame {
+  animation: lily-pad-float 4s ease-in-out infinite;
+}
