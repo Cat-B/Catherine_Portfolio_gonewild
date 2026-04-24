@@ -187,19 +187,18 @@ body.whimsy-mode img.shadow-xl {
 
 body.whimsy-mode .image-frame {
   animation: lily-pad-float 4s ease-in-out infinite;
-  border-radius: 1rem;
+  background: linear-gradient(135deg, #ffd875, #f4f9ed 42%, #1f6b3a);
+  border-radius: 1.25rem;
   box-shadow: var(--whimsy-shadow);
+  padding: 0.35rem;
 }
 
 body.whimsy-mode .image-frame::after {
-  background-image: url('/assets/remote-images/dvagtfg-4f621a0658.png');
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: min(46%, 150px);
-  border-radius: inherit;
+  border: 2px solid rgba(255, 216, 117, 0.75);
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0 2px rgba(13, 59, 34, 0.18);
   content: '';
-  inset: 0;
-  opacity: 0.7;
+  inset: 0.35rem;
   pointer-events: none;
   position: absolute;
 }
