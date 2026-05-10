@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useParams } from 'react-router-dom';
-import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown, ArrowLeft, ChevronLeft, ChevronRight, GraduationCap, MapPin, FileText, Briefcase, Calendar, Building, Sparkles } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, ExternalLink, ArrowLeft, ChevronLeft, ChevronRight, GraduationCap, MapPin, FileText, Calendar, Building, Sparkles } from 'lucide-react';
 
 // Professional Experience Data
 const experienceData = [
@@ -34,7 +34,7 @@ const experienceData = [
     company: "Sky Elements Drone Shows",
     location: "Dallas, TX",
     duration: "April 2021 - January 2023",
-    description: "As a drone crew member, I maintained and prepared UAVs for live shows, ensured safe operation of hazardous equipment, and arranged preparatory formations—an experience that sparked my passion for drone technology..",
+    description: "As a drone crew member, I maintained and prepared UAVs for live shows, ensured safe operation of hazardous equipment, and arranged preparatory formations—an experience that sparked my passion for drone technology.",
   },
       {
     id: 5,
@@ -136,7 +136,7 @@ const projectsData = [
     title: "Gingerbread Greenhouse Dream",
     date: "Fall 2022",
     shortDescription: "Designed and built a complex edible greenhouse with sloped roofs, gelatin windows, and integrated lights with christmas themed interior.",
-    image: "https://i.imgur.com/ZV8Iv8Y.jpeg",
+    image: "/assets/remote-images/zv8iv8y-b69df794d5.jpeg",
     tech: ["Architectural Design", "Food Engineering", "Passion Project", "Project Planning"],
     overview: "For a high school creative engineering challenge, I designed and constructed a fully edible, architecturally complex gingerbread greenhouse. The structure featured sloped roofs, a small entry hall with swinging double doors, integrated lighting beneath a 'tiled' floor, and window panels made of gelatin sheets to create a realistic greenhouse effect. I am extremly proud of the results and used this project as a great chance to show off how I can work with limiting materials.",
     mainBody: [ "In my senior year of high school, I challenged myself to build an architecturally ambitious gingerbread structure. Inspired by greenhouse design, the final build featured sloped roofs, gelatin sheet windows, and a fully edible entry hall with swinging double doors.",
@@ -147,12 +147,12 @@ const projectsData = [
     ,
     outcomes: "The purpose of this project was mainly fun, while I did learn some new geometry to calculate the roof shape, the overall project was mostly creative/art rather than engineering/calculation based. This project and other physical projects I have done have strengthened my spatial reasoning skills, and ultimately made me a more skilled designer when I learned CAD at a higher level. Not every project has to be extremely productive, but I am so happy I made this.",
     gallery: [
-      "https://i.imgur.com/nyAAhUl.jpeg",
-      "https://i.imgur.com/0j5ndnl.jpeg",
-      "https://i.imgur.com/LqrKlB0.jpeg",
-      "https://i.imgur.com/PmqSBN0.jpeg",
-      "https://i.imgur.com/42AiL9D.jpeg",
-      "https://i.imgur.com/6ANpE0C.jpeg"
+      "/assets/remote-images/nyaahul-175f30784f.jpeg",
+      "/assets/remote-images/0j5ndnl-f3fbf9b693.jpeg",
+      "/assets/remote-images/lqrklb0-22e068129e.jpeg",
+      "/assets/remote-images/pmqsbn0-22312eae6f.jpeg",
+      "/assets/remote-images/42ail9d-fb9337e168.jpeg",
+      "/assets/remote-images/6anpe0c-1de778bbb7.jpeg"
     ]
   },
   {
@@ -160,18 +160,18 @@ const projectsData = [
     title: "EE210 Karaoke Machine",
     date: "Summer 2025",
     shortDescription: "Designed, prototyped, and soldered a five‑block op‑amp karaoke machine with tone, volume, and LED display.",
-    image: "https://i.imgur.com/XWU0mm3.jpeg",
+    image: "/assets/remote-images/xwu0mm3-9ff4f5d463.jpeg",
     tech: ["Soldering", "PCB Assembly", "Mechatronics", "Op-Amps","Circuit Design"],
     overview: "In my EE210 Circuits and Devices course, I worked on a semester-long project that brought together the key concepts we learned throughout the class. The goal was to design and build a working karaoke machine by applying fundamentals like op-amps, resistors, capacitors, potentiometers, LEDs, and switches. This was one of my first major hands-on experiences with electronics, and it gave me a chance to see how classroom theory connects to real-world applications.",
     mainBody: "The circuit design was divided into five main parts: a mixer for combining microphone and music signals, a tone control stage for treble and bass adjustments, a volume control stage, a volume display using LEDs that responded to loudness, and an output driver with attenuation. I began the process by sketching the blocks on paper, then recreated the design in Multisim to simulate the system and troubleshoot potential issues. Once the simulation was complete, I tested the circuit on a breadboard to confirm that it worked before finally moving to a PCB. On the PCB, I soldered all the components and built a semi-functional karaoke machine that could play music with or without vocals and adjust the tone and volume in real time."
     ,
     outcomes: "This project pushed me out of my comfort zone, since I started the class with very little electrical knowledge. Along the way, I learned how to work with op-amps in different configurations, how to approach problems methodically through simulation and testing, and how to solder and assemble a functional PCB. While the final result was not perfect, it gave me confidence in my ability to learn new technical skills, and it reinforced my interest in exploring the electrical side of my Mechatronics minor. Overall, I walked away with a stronger foundation in circuit design and an appreciation for the problem-solving process that comes with building hardware.",
     gallery: [
-      "https://i.imgur.com/Q3VF4Hy.jpeg",
-      "https://i.imgur.com/QDXGVsu.jpeg",
-      "https://i.imgur.com/XWU0mm3.jpeg",
-      "https://i.imgur.com/Z0wNYsV.jpeg",
-      "https://i.imgur.com/Nm1VEUC.jpeg"
+      "/assets/remote-images/q3vf4hy-478e9fcd48.jpeg",
+      "/assets/remote-images/qdxgvsu-2aa1dc2992.jpeg",
+      "/assets/remote-images/xwu0mm3-9ff4f5d463.jpeg",
+      "/assets/remote-images/z0wnysv-2f19be98c8.jpeg",
+      "/assets/remote-images/nm1veuc-04a9a3b46c.jpeg"
     ],
     pdfUrl: "/karaoke_final.pdf"
   },
@@ -180,7 +180,7 @@ const projectsData = [
     title: "ASME Hovercraft Project",
     date: "Spring 2025",
     shortDescription: "Contributed to a winning team hovercraft through fabrication, design file management, and final competition prep.",
-    image: "https://i.imgur.com/1ChHnxY.jpeg",
+    image: "/assets/remote-images/1chhnxy-2a23901437.jpeg",
     tech: ["Fusion360","Team Work","Organization","Fabrication"],
     overview: "Through Penn State's ASME (American Society of Mechanical Engineers) club, I contributed to a team project focused on designing and competing with a small hovercraft. The challenge involved three teams each building a shoebox-sized hovercraft from scratch, with a competition taking place in March 2025. I joined the project in the spring semester after much of the core design work was completed, which gave me the opportunity to support the team through final iterations and preparation for the event..",
     mainBody: [ "The hovercraft, named Driftstorm, pulled inspiration from fan boat acceleration structures. It featured two fan systems: one directed downward to inflate a skirt of nylon fabric that allowed the craft to hover above the floor, and another pointed backward to generate forward thrust. Steering was achieved by adjusting blades behind the rear fan, and the system was powered by lithium batteries. The skirt was a key component in ensuring the hovercraft could glide smoothly and maintain stability during operation.",
@@ -189,20 +189,19 @@ const projectsData = [
     ,
     outcomes: "This project gave me exposure to a collaborative engineering environment outside the classroom, where the dynamics of teamwork, iteration, and rapid problem-solving were front and center. I gained hands-on experience with fabrication tools like the laser cutter and saw firsthand how small adjustments (such as tweaking a skirt design) can make a significant impact on performance. Working with this group was truly incredible and was part of my inspiration to join leadership within ASME. Overall, the experience reinforced the importance of contributing wherever possible, even in a supporting role, and showed me how rewarding it can be to be part of a large, successful engineering team. I believe ASME at Penn State is an incredible organization, and I can't wait to contribute as a leader and a team member to future projects.",
     gallery: [
-      "https://i.imgur.com/TEG8q4q.jpeg",
-      "https://i.imgur.com/ER0IhCb.jpeg",
-      "https://i.imgur.com/7jL8A6j.jpeg",
-      "https://i.imgur.com/jK08w1d.jpeg",
-      "https://i.imgur.com/2dUJ3GT.jpeg"
+      "/assets/remote-images/teg8q4q-a07a27bd03.jpeg",
+      "/assets/remote-images/er0ihcb-2d5e327cfc.jpeg",
+      "/assets/remote-images/7jl8a6j-8d1c561352.jpeg",
+      "/assets/remote-images/jk08w1d-4e45e2890c.jpeg",
+      "/assets/remote-images/2duj3gt-87bc4dcc5a.jpeg"
     ],
   },
   {
     id: 20,
-    /*remember to change the gallery number too line 500ish */
     title: "ELSA-d LEO Engineering Presentation",
     date: "Fall 2024",
     shortDescription: "Presented a professional, research‑driven talk on ELSA‑d satellite retrieval and the orbital debris problem.",
-    image: "https://imgs.search.brave.com/XWEwsoNsTsJqDA8EL5ulT0evB4iSTLccx-GCn9W-CD4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZW9wb3J0YWwub3Jn/L2FwaS9jbXMvZG9j/dW1lbnRzL2QvZW9w/b3J0YWwvZWxzYS1k/X2F1dG8yLWpwZWc",
+    image: "/assets/remote-images/x2f1dg8ylwpwzwc-266279d525.webp",
     tech: ["Academic Research", "Public Speaking", "Professional Communication","Technical Presentation","Aerospace Engineering"],
     overview: "In a technical speech class at Penn State, I completed a semester-long project that culminated in a single, intensive speech of approximately twelve minutes. The project challenged me to conduct high-level engineering research and synthesize complex information into a clear and engaging presentation. The speech focused on the ELSA-d (End-of-Life Service by Astroscale Demonstration) mission and the broader challenges of space pollution, a growing concern as we approach critical limits in orbital debris.",
     mainBody: [ "Preparing this speech was a rigorous process that demanded extensive research, careful source evaluation, and meticulous organization. I had to hunt for academic and engineering sources, ensuring that every point I made was accurate, well-supported, and relevant to the broader context of space sustainability. This required more effort than typical course projects, as I needed to translate highly technical material into language that could be understood and appreciated by a general engineering audience.",
@@ -211,10 +210,10 @@ const projectsData = [
     ,
     outcomes: "This project taught me how to tackle challenging technical material and present it in a compelling way, emphasizing clarity without sacrificing depth. I gained experience in academic research, public speaking, and time management under high-pressure conditions. More broadly, I learned the value of persistence and preparation when faced with a demanding task, and I gained confidence in my ability to communicate sophisticated engineering topics to large audiences. Though it may have been tempting to research at a surface level or use less credible sources, diving incredibly deep allowed me to become a pseudo-expert on this topic. Hard work truly does pay off, and everyone who heard my speech was able to recognize the amount of background I invested. The experience reinforced the importance of combining technical expertise with strong communication skills, an essential competency for any engineer.",
     gallery: [
-      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "/assets/remote-images/pexels-photo-196644-026c0fa526.jpeg",
+      "/assets/remote-images/pexels-photo-442587-60e65d395f.jpeg",
+      "/assets/remote-images/pexels-photo-3862130-22e80302d5.jpeg",
+      "/assets/remote-images/pexels-photo-1034662-51caad9656.jpeg"
     ],
     pdfUrl: "/elsa-d-presentation.pdf"
   },
@@ -223,7 +222,7 @@ const projectsData = [
     title: "3D Printed Penny Boats",
     date: "Fall 2023/24",
     shortDescription: "Designed and 3D printed two competition-winning penny boats that balanced buoyancy, creativity, and sustainability while doubling as everyday organizers.",
-    image: "https://i.imgur.com/tUHkEFq.jpeg",
+    image: "/assets/remote-images/tuhkefq-bd4403b19d.jpeg",
     tech: ["SolidWorks","3D Printing","Sustainable Design","Artistic Flair","Rapid Prototyping"],
     overview: "Through Penn State's 3D Printing Club, I participated in the annual Penny Boat competition during both my freshman and sophomore years. The challenge was to design and 3D print a small boat that could hold as many pennies as possible before sinking and staying within strict competition rules. These projects gave me the chance to combine creativity, engineering problem-solving, and practical design considerations while also thinking about sustainability and long-term use.",
     mainBody: ["During my freshman year, I designed the Queen Bee Barge, a honeycomb-inspired boat that featured hexagonal cells resembling a beehive. This design not only gave the boat strength and structure but also required no supports during printing, making it material efficient and easier to process. The design was a success, and my boat won the competition. Afterward, I repurposed it into an organizer, with each honeycomb cell holding small bathroom and makeup items.",
@@ -231,11 +230,11 @@ const projectsData = [
               "From a technical perspective, I considered weight distribution and buoyancy in both designs. I placed pennies evenly across the hull and used an infill pattern that maximized air pockets without sacrificing too much structural strength, allowing the boats to float effectively while still holding a significant number of pennies."],
     outcomes: "These projects taught me creative problem-solving, practical 3D printing techniques, and how to balance competition goals with sustainability and real-world use. Beyond the technical lessons, I gained an appreciation for designing with purpose: making something that not only performs well in a challenge but also has long-term utility. The Penny Boat projects showed me how engineering can be fun, resourceful, and environmentally thoughtful all at the same time.",
     gallery: [
-      "https://i.imgur.com/HAgbXWK.jpeg",
-      "https://i.imgur.com/JHnkAsA.jpeg",
-      "https://i.imgur.com/tUHkEFq.jpeg",
-      "https://i.imgur.com/flFfWhH.jpeg",
-      "https://i.imgur.com/RcIZIq9.png"
+      "/assets/remote-images/hagbxwk-7dfd8f608e.jpeg",
+      "/assets/remote-images/jhnkasa-0faa1c9f7f.jpeg",
+      "/assets/remote-images/tuhkefq-bd4403b19d.jpeg",
+      "/assets/remote-images/flffwhh-5fcdc1a57a.jpeg",
+      "/assets/remote-images/rciziq9-f3ec8cee00.png"
     ]
   },
     {
@@ -243,27 +242,26 @@ const projectsData = [
     title: "Student Portfolio Upgrade",
     date: "Summer 2025",
     shortDescription: "Using AI Programing tools, coding skills, .",
-    image: "https://i.imgur.com/YOzFYlx.png",
+    image: "/assets/remote-images/yozfylx-3378370f94.png",
     tech: ["TypeScript", "Website Development", "Coding","AI Integration","bolt.new"],
     overview: "To showcase my engineering work in a professional way, I built my own portfolio website. The project began as an update to my old high school resume. My old portfolio was made in google sites and no longer felt representative of my skill level in college. While I had little prior web development experience, I used an AI-assisted coding platform to generate the base structure of the site, then gradually refined and expanded it. Over the course of about a month, I went from a template-driven beginner to someone much more confident navigating code, AI tools, and web publishing.",
     mainBody: ["The process began with the AI platform, which helped me generate the initial framework of the site. This gave me a template to build on, since I wasn't yet proficient enough in coding to design everything from scratch. On the baseline plan I had access to a very limited number of tokens, which forced me to dive into the raw code myself and save those tokens for when I was truly stuck. I migrated everything into GitHub and began manually editing and adjusting the site. This was slow and sometimes frustrating, but it gave me an accelerated learning curve by working off an existing base. I gradually became more comfortable making changes, fixing errors, and customizing the site to better fit my needs. Along the way, I picked up foundational skills in TypeScript and strengthened my ability to work with AI as a collaborative tool rather than a crutch.",
               "Another important step was learning how to buy a custom domain and publish the site under it. That process gave me hands-on experience with web infrastructure and the practical side of making a site accessible to the public. To tie it all together, I also created a laser-engraved NFC business card linked directly to my website. While NFC tags are simple and easy to make, the card felt like a fun, modern touch that makes sharing my portfolio both practical and memorable."],
     outcomes: "This project taught me far more than I expected going in. On the technical side, I gained confidence working with TypeScript, GitHub, and the basics of deploying a live website. I also saw firsthand how AI can accelerate learning when used thoughtfully, but that it can't replace the need to understand and engage with the material yourself. Beyond the technical lessons, I walked away with a tangible, professional portfolio that reflects my growth as an engineer, and a set of skills that I know will be useful moving forward. More broadly, this project reinforced the importance of adaptability—especially as AI becomes a bigger part of the engineering world—and showed me the value of persistence when facing something outside my comfort zone.",
     gallery: [
-      "https://i.imgur.com/YOzFYlx.png",
-      "https://i.imgur.com/t7uPOBw.png",
-      "https://i.imgur.com/vCrxCPz.jpeg",
-      "https://i.imgur.com/tpbEC7y.jpeg"
+      "/assets/remote-images/yozfylx-3378370f94.png",
+      "/assets/remote-images/t7upobw-d4290c9809.png",
+      "/assets/remote-images/vcrxcpz-ec7e6eed4b.jpeg",
+      "/assets/remote-images/tpbec7y-8f7d2c043f.jpeg"
     ],
     pdfUrl: "https://sites.google.com/view/cboss-hs-en/home"
   },
-   {
-     /*remember to change the gallery number too line 500ish */
+  {
     id: 40,
     title: "Matlab Presentation",
     date: "October 2025",
-    shortDescription: "Beep Boop",
-    image: "https://i.imgur.com/99CDz4C.png",
+    shortDescription: "Delivered a practical MATLAB tech talk for ASME members, connecting classroom tools to engineering problem solving.",
+    image: "/assets/remote-images/99cdz4c-6ee55776ea.png",
     tech: ["Tech Talk", "Public Speaking", "Professional Communication","AI Integration","Technical Presentation","MATLAB"],
     overview: "As the Dual Secretary for the Penn State chapter of ASME, I work closely with both the executive board and multiple design teams to support technical engagement within the organization. Early in the semester, I delivered a large-scale technical presentation focused on MATLAB, a tool that many undergraduate engineers approach with hesitation or frustration. My goal was to reframe MATLAB as an accessible, powerful engineering resource when used correctly, and to demonstrate its relevance across coursework, design teams, and real-world engineering applications.",
     mainBody: [ "This presentation took place during the second week of classes at one of our early design team meetings and was attended by roughly 100 ASME members, ranging from first-year students to seniors. I spent a significant amount of time preparing custom MATLAB scripts, slides, and demonstrations designed to meet students at different experience levels. Rather than assuming prior comfort with the software, I focused on fundamentals, clarity, and practical use cases, emphasizing that many frustrations stem from how MATLAB is introduced rather than from the tool itself.",
@@ -272,32 +270,13 @@ const projectsData = [
     ,
     outcomes: "This project strengthened my ability to plan and deliver a large technical talk to a diverse audience while maintaining confidence and clarity. I gained experience communicating with multiple stakeholders, defending my technical perspective professionally, and presenting content I genuinely care about. I also deepened my own understanding of MATLAB and emerging AI-assisted workflows, which made the project both educational and enjoyable. Most importantly, the experience reinforced the value of advocacy for good tools and good practices (especially when they are misunderstood),and showed me how thoughtful communication can shift perspectives and encourage growth within an engineering community.",
    gallery: [
-      "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=800"
+      "/assets/remote-images/pexels-photo-196644-026c0fa526.jpeg",
+      "/assets/remote-images/pexels-photo-442587-60e65d395f.jpeg",
+      "/assets/remote-images/pexels-photo-3862130-22e80302d5.jpeg",
+      "/assets/remote-images/pexels-photo-1034662-51caad9656.jpeg"
     ],
     pdfUrl: "/matlab_talk.pdf"
-  },
-  /*
-  {
-    id: 6,
-    title: "Robotic Arm Control System",
-    date: "Fall 2021",
-    shortDescription: "A 6-DOF robotic arm with computer vision for precise object manipulation and sorting tasks.",
-    image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600",
-    tech: ["Robotics", "Computer Vision", "Inverse Kinematics", "Machine Learning"],
-    overview: "Built a sophisticated robotic arm system capable of identifying, grasping, and sorting objects of various shapes and sizes. The project integrated mechanical design, control systems, and artificial intelligence.",
-    mainBody: "The 6-degree-of-freedom robotic arm was designed with custom joints and actuators for maximum flexibility and precision. A computer vision system using OpenCV identifies objects by shape, color, and size, then calculates optimal grasping strategies. Inverse kinematics algorithms determine the required joint angles to reach target positions while avoiding obstacles. The gripper mechanism adapts to different object geometries using compliant fingers with tactile feedback. Machine learning algorithms improve grasping success rates over time by learning from previous attempts. The system includes safety features such as collision detection and emergency stop capabilities.",
-    outcomes: "Achieved 92% success rate in object identification and 87% success rate in grasping tasks across various object types. The system could sort up to 60 objects per hour with high accuracy. This project enhanced my skills in robotics, computer vision, and the integration of multiple complex systems.",
-    gallery: [
-      "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
-    ]
   }
-  */
 ];
 
 // Project Detail Component
@@ -667,51 +646,6 @@ function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [whimsyMode, setWhimsyMode] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    setIsSubmitting(true);
-    setSubmitMessage('');
-
-    try {
-      const response = await fetch('/functions/v1/send-contact-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        setSubmitMessage(result.message);
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setSubmitMessage(result.error || 'An error occurred. Please try again.');
-      }
-    } catch (error) {
-      setSubmitMessage('Network error. Please check your connection and try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -813,19 +747,18 @@ function Portfolio() {
       <section id="home" className="pt-20 pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 mb-12">
-          {/* Profile Image */}
-<div className="flex-shrink-0">
-  <div className="image-frame">
-    <img 
-      src="https://i.imgur.com/FgJr1hj.jpeg" 
-      alt="Catherine Boss"
-      className="w-80 h-80 object-cover rounded-2xl shadow-lg"
-    />
-  </div>
-</div>
+            {/* Profile Image */}
+            <div className="flex-shrink-0">
+              <div className="image-frame">
+                <img
+                  src="/assets/remote-images/fgjr1hj-7997128789.jpeg"
+                  alt="Catherine Boss"
+                  className="w-80 h-80 object-cover rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
 
-          
-          {/* Profile Info */}
+            {/* Profile Info */}
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center bg-green-50 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
@@ -910,7 +843,7 @@ function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://i.imgur.com/H6dWrSv.jpeg"
+                src="/assets/remote-images/h6dwrsv-68f55e3317.jpeg"
                 alt="About Catherine"
                 className="rounded-lg shadow-lg w-full"
               />
